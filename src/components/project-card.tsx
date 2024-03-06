@@ -10,7 +10,6 @@ import { Badge } from "./ui/badge";
 interface Props {
   title: string;
   description: string;
-  tags: readonly string[];
   link?: string;
 }
 

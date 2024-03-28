@@ -53,7 +53,13 @@ export const RESUME_DATA = {
         Led product development and strategy for Canonic which allows users to develop full stack applications without code.
         </li>
         <li>
-        Implemented analytical frameworks, including dashboards and alerts, for monitoring and decision-making.
+        As a product owner, I led user interviews and surveys, crafted detailed Product Requirement Documents (PRDs), and drove continuous product enhancements.
+        </li>
+        <li>
+        Led the implementation of robust analytical frameworks, including comprehensive dashboards and alert systems, to monitor performance metrics and facilitate data-driven decision-making.
+        </li>        
+        <li>
+        Built and grew cross-functional teams in engineering, design, and marketing.
         </li>
         <li>
         Oversee legal and administrative functions of the company in the US and India.

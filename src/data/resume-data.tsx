@@ -58,7 +58,10 @@ export const RESUME_DATA = {
         </li>
         <li>
         Implemented robust analytical frameworks, including comprehensive dashboards and alert systems, to monitor performance metrics and drive data-driven decisions.
-        </li>        
+        </li>
+        <li>
+        Engineered successful product launches on platforms such as Product Hunt, securing top rankings and increasing our visibility within the developer community.
+        </li>     
         <li>
         Established and nurtured cross-functional teams across engineering, design, and marketing for cohesive collaboration, growing the team from 4 to 14 members.
         </li>

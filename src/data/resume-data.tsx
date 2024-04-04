@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Delhi",
   about:
     "Currently managing Product at Canonic.",
-  summary: "Experienced engineering & product professional with a strong sense of ownership. Over 7 years of dedicated work with product companies, specializing in developer tools.",
+  summary: "Product & engineering professional with a strong sense of ownership. With over seven years of experience in the tech industry, I possess a strong background of leading strategic initiatives and accomplishing business objectives. Passionate about building innovative products that empower users, drive impact and enact meaningful change in the world.",
   // avatarUrl: "https://avatars.githubusercontent.com/u/14364505?v=4",
   personalWebsiteUrl: "",
   contact: {
@@ -139,12 +139,15 @@ export const RESUME_DATA = {
     // },
   ],
   skills: [
-    "Product Development",
-    "Engineering Collaboration",
+    "Product Strategy",
+    "Product Management",
     "User Research",
+    "Market Research",
+    "Data Analysis",
     "SQL",
+    "Technical Writing",
     "Developer Tools",
     "Scrum",
-    "Financial Compliances",
+    "Legal and Compliance",
   ],
 } as const;

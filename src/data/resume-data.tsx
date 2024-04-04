@@ -44,7 +44,7 @@ export const RESUME_DATA = {
       company: "Canonic",
       link: "https://canonic.dev",
       badges: [],
-      title: "Product Owner",
+      title: "Head of Product",
       start: "2020",
       end: "Present",
       description:(

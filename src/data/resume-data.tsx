@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Delhi",
   about:
     "Currently managing Product at Canonic.",
-  summary: "Experienced engineering professional with a strong sense of ownership. Over 7 years of dedicated work with product companies, specializing in developer tools.",
+  summary: "Experienced engineering & product professional with a strong sense of ownership. Over 7 years of dedicated work with product companies, specializing in developer tools.",
   // avatarUrl: "https://avatars.githubusercontent.com/u/14364505?v=4",
   personalWebsiteUrl: "",
   contact: {
@@ -51,10 +51,10 @@ export const RESUME_DATA = {
         <>
         
         <li>
-        Led product development and strategy at Canonic, enabling users to create full stack applications without code.
+        Led product development and strategy at Canonic, empowering users to create full-stack applications without code, securing a seed round from top-tier investors.
         </li>
         <li>
-        Orchestrated user interviews and surveys, authored detailed Product Requirement Documents (PRDs), and directed ongoing product enhancements as a product owner.
+        Orchestrated user interviews and surveys, authored detailed Product Requirement Documents (PRDs), directed ongoing product enhancements, and led product road-mapping as a product owner.
         </li>
         <li>
         Implemented robust analytical frameworks, including comprehensive dashboards and alert systems, to monitor performance metrics and drive data-driven decisions.
@@ -79,13 +79,13 @@ export const RESUME_DATA = {
       description: (
         <>
           <li>
-          Headed the development and management of the iOS SDK from inception, enabling AI-powered chatbots within iOS applications.
+          Headed the development and management of the iOS SDK from inception, designed to manage millions of conversations daily, enabling AI-powered chatbots within iOS applications.
           </li>
           <li>
-          Facilitated the company's strategic transition from a B2C to a B2B business model, ensuring seamless integration and functionality.
+          Facilitated the company's strategic transition from a B2C to a B2B business model, culminating in a $100M acquisition by Jio.
           </li>
           <li>
-          Successfully integrated the SDK with notable brands including FuturePay, Times, Jio, and others, expanding its reach and impact.
+          Integrated the SDK with notable brands including FuturePay, Times, Jio, and others, expanding its reach and impact.
           </li>
         </>
       ),

@@ -1,14 +1,14 @@
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Simranjot Singh",
+  name: "Simranjot",
   initials: "",
   location: "Delhi, India",
   locationLink: "https://www.google.com/maps/place/Delhi",
   about:
     "Currently managing Product at Canonic.",
-  summary: "Accomplished professional with a background in engineering and a strong entrepreneurial spirit. I have over 7 years of experience working with product companies and a special love for developer tools.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/14364505?v=4",
+  summary: "Experienced engineering professional with a strong sense of ownership. Over 7 years of dedicated work with product companies, specializing in developer tools.",
+  // avatarUrl: "https://avatars.githubusercontent.com/u/14364505?v=4",
   personalWebsiteUrl: "",
   contact: {
     email: "iamsimranjot@gmail.com",
@@ -44,25 +44,26 @@ export const RESUME_DATA = {
       company: "Canonic",
       link: "https://canonic.dev",
       badges: [],
-      title: "Co-founder",
+      title: "Product Owner",
       start: "2020",
       end: "Present",
       description:(
         <>
+        
         <li>
-        Led product development and strategy for Canonic which allows users to develop full stack applications without code.
+        Led product development and strategy at Canonic, enabling users to create full stack applications without code.
         </li>
         <li>
-        As a product owner, I led user interviews and surveys, crafted detailed Product Requirement Documents (PRDs), and drove continuous product enhancements.
+        Orchestrated user interviews and surveys, authored detailed Product Requirement Documents (PRDs), and directed ongoing product enhancements as a product owner.
         </li>
         <li>
-        Led the implementation of robust analytical frameworks, including comprehensive dashboards and alert systems, to monitor performance metrics and facilitate data-driven decision-making.
+        Implemented robust analytical frameworks, including comprehensive dashboards and alert systems, to monitor performance metrics and drive data-driven decisions.
         </li>        
         <li>
-        Built and grew cross-functional teams in engineering, design, and marketing.
+        Established and nurtured cross-functional teams across engineering, design, and marketing for cohesive collaboration.
         </li>
         <li>
-        Oversee legal and administrative functions of the company in the US and India.
+        Managed legal and administrative operations for the company in the US and India, ensuring compliance and operational efficiency.
         </li>
         </>
       )
@@ -72,19 +73,19 @@ export const RESUME_DATA = {
       company: "Haptik",
       link: "https://www.haptik.ai/",
       badges: [],
-      title: "iOS Engineer",
+      title: "Software Engineer",
       start: "2017",
       end: "2020",
       description: (
         <>
           <li>
-          Developed and managed the iOS SDK from inception, enabling AI-powered chatbots within iOS applications.
+          Headed the development and management of the iOS SDK from inception, enabling AI-powered chatbots within iOS applications.
           </li>
           <li>
-          Facilitated the company's transition from a B2C to B2B business model.
+          Facilitated the company's strategic transition from a B2C to a B2B business model, ensuring seamless integration and functionality.
           </li>
           <li>
-          Integrated the SDK with prominent brands such as FuturePay, Times, and Jio, etc.
+          Successfully integrated the SDK with notable brands including FuturePay, Times, Jio, and others, expanding its reach and impact.
           </li>
         </>
       ),
@@ -93,16 +94,16 @@ export const RESUME_DATA = {
       company: "Novoinvent",
       link: "https://www.novoinvent.com/",
       badges: [],
-      title: "iOS Intern",
+      title: "Software Engineering Intern",
       start: "2016",
       end: "2017",
       description:(
         <>
         <li>
-        Developed a customizable Health Insurance Marketplace framework for iOS, streamlining enrollment and purchase of health insurance for US citizens.
+        Engineered a customizable Health Insurance Marketplace framework for iOS, streamlining the enrollment and purchase process of health insurance for US citizens.
         </li>
         <li>
-        Implemented architecture to cater to specific state applications (e.g., Access Health CT for Connecticut, Enroll MHC for Maryland).
+        Implemented tailored architectures to accommodate state-specific applications such as Access Health CT for Connecticut and Enroll MHC for Maryland, ensuring seamless integration and functionality.
         </li>
         </>
       )        ,
@@ -138,6 +139,7 @@ export const RESUME_DATA = {
     "Product Development",
     "Engineering Collaboration",
     "User Research",
+    "SQL",
     "Developer Tools",
     "Scrum",
     "Financial Compliances",

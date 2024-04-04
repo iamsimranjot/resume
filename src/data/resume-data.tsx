@@ -51,7 +51,7 @@ export const RESUME_DATA = {
         <>
         
         <li>
-        Led product development and strategy at Canonic, empowering users to create full-stack applications without code, securing a seed round from top-tier investors.
+        Led product development and strategy at Canonic, empowering users to create full-stack applications without code, and securing a seed round from top-tier investors.
         </li>
         <li>
         Orchestrated user interviews and surveys, authored detailed Product Requirement Documents (PRDs), directed ongoing product enhancements, and led product road-mapping as a product owner.
@@ -60,7 +60,7 @@ export const RESUME_DATA = {
         Implemented robust analytical frameworks, including comprehensive dashboards and alert systems, to monitor performance metrics and drive data-driven decisions.
         </li>        
         <li>
-        Established and nurtured cross-functional teams across engineering, design, and marketing for cohesive collaboration.
+        Established and nurtured cross-functional teams across engineering, design, and marketing for cohesive collaboration, growing the team from 4 to 14 members.
         </li>
         <li>
         Managed legal and administrative operations for the company in the US and India, ensuring compliance and operational efficiency.

@@ -3,16 +3,16 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 export const RESUME_DATA = {
   name: "Simranjot",
   initials: "",
-  location: "Delhi, India",
-  locationLink: "https://www.google.com/maps/place/Delhi",
+  location: "Bengaluru, India",
+  locationLink: "https://www.google.com/maps/place/Bengaluru",
   about:
-    "Currently managing Product at Canonic.",
-  summary: "Product & engineering professional with a strong sense of ownership. With over seven years of experience in the tech industry, I possess a strong background of leading strategic initiatives and accomplishing business objectives. Passionate about building innovative products that empower users, drive impact and enact meaningful change in the world.",
+    "Driving growth, monetization, and product strategy.",
+  summary: "Product & engineering leader with 8+ years of experience building and scaling impactful products. I bring strong ownership, a user-first mindset, and a passion for driving growth and meaningful outcomes through tech. Recently led initiatives that boosted MRR by 19% at a YC-backed startup.",
   // avatarUrl: "https://avatars.githubusercontent.com/u/14364505?v=4",
   personalWebsiteUrl: "",
   contact: {
     email: "iamsimranjot@gmail.com",
-    tel: "+919914370072",
+    tel: "+91-9914370072",
     social: [
       {
         name: "GitHub",
@@ -21,7 +21,7 @@ export const RESUME_DATA = {
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/iamsimranjot/",
+        url: "https://www.linkedin.com/in/iamsimranjot",
         icon: LinkedInIcon,
       },
       {
@@ -41,15 +41,32 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Canonic",
-      link: "https://canonic.dev",
+      company: "BusinessOnBot (YC W21)",
+      link: "https://www.businessonbot.com/",
       badges: [],
-      title: "Head of Product",
-      start: "2020",
+      title: "Senior Product Manager",
+      start: "2024",
       end: "Present",
       description:(
         <>
-        
+        <li>Leading the Support vertical, facilitated the transition from a WhatsApp-first offering to a complete omnichannel support suite (WhatsApp, Instagram, Email).</li>
+        <li>Increased average monthly transaction size (ATS) across client portfolio by ₹2000, resulting in a ~19% uplift in MRR.</li>
+        <li>Launched the Knowledge Base with the Customer Success team improving client self-service and reducing dependency on support teams by 31%.</li>
+        <li>Responsible for hiring across Product and Design functions, helping scale the team with strong talent.</li>
+        <li>Managing a team of 3 PMs and 2 Designers, setting up product practices, roadmapping rituals, and delivery processes.</li>
+        <li>Working closely with Engineering, Customer Success, and Growth teams to to ensure alignment between business goals and product priorities.</li>
+        </>
+      ) 
+    },
+    {
+      company: "Canonic",
+      link: "https://www.producthunt.com/products/canonic",
+      badges: [],
+      title: "Head of Product | Co-Founder",
+      start: "2020",
+      end: "2024",
+      description:(
+        <>
         <li>
         Led product development and strategy at Canonic, empowering users to create full-stack applications without code, and securing a seed round from top-tier investors.
         </li>
@@ -63,10 +80,7 @@ export const RESUME_DATA = {
         Engineered successful product launches on platforms such as Product Hunt, securing top rankings and increasing our visibility within the developer community.
         </li>     
         <li>
-        Established and nurtured cross-functional teams across engineering, design, and marketing for cohesive collaboration, growing the team from 4 to 14 members.
-        </li>
-        <li>
-        Managed legal and administrative operations for the company in the US and India, ensuring compliance and operational efficiency.
+        Established cross-functional teams across engineering, design, and marketing for cohesive collaboration, growing the team from 4 to 14 members.
         </li>
         </>
       )
@@ -76,7 +90,7 @@ export const RESUME_DATA = {
       company: "Haptik",
       link: "https://www.haptik.ai/",
       badges: [],
-      title: "Software Engineer",
+      title: "Software Engineer (iOS)",
       start: "2017",
       end: "2020",
       description: (
@@ -97,7 +111,7 @@ export const RESUME_DATA = {
       company: "Novoinvent",
       link: "https://www.novoinvent.com/",
       badges: [],
-      title: "Software Engineering Intern",
+      title: "Software Engineering Intern (iOS)",
       start: "2016",
       end: "2017",
       description:(
@@ -143,11 +157,12 @@ export const RESUME_DATA = {
     "Product Management",
     "User Research",
     "Market Research",
+    "Stakeholder Management",
+    "Growth Strategy",
     "Data Analysis",
-    "SQL",
-    "Technical Writing",
+    "Technical Writing",  
     "Developer Tools",
+    "API Design",
     "Scrum",
-    "Legal and Compliance",
   ],
 } as const;

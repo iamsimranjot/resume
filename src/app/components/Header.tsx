@@ -125,11 +125,22 @@ function PrintContact({ contact, personalWebsiteUrl }: PrintContactProps) {
         </>
       )}
       {contact.tel && (
+        <>
         <a
           className="underline hover:text-foreground/70"
           href={`tel:${contact.tel}`}
         >
           {contact.tel}
+        </a>
+        <span aria-hidden="true">/</span>
+        </>
+      )}
+      {contact.social[1] && (
+        <a
+          className="underline hover:text-foreground/70"
+          href={`${contact.social[1].url}`}
+        >
+          {`${contact.social[1].url.replace("https://", "").replace("www.", "").replace("in/", "")}`}
         </a>
       )}
     </div>

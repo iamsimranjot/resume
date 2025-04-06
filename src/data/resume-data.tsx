@@ -8,7 +8,7 @@ export const RESUME_DATA = {
   about:
     "Driving growth, monetization, and product strategy.",
   summary: "Product & engineering leader with 8+ years of experience building and scaling impactful products. I bring strong ownership, a user-first mindset, and a passion for driving growth and meaningful outcomes through tech. Recently led initiatives that boosted MRR by 19% at a YC-backed startup.",
-  // avatarUrl: "https://avatars.githubusercontent.com/u/14364505?v=4",
+  avatarUrl: "https://avatars.githubusercontent.com/u/14364505?v=4",
   personalWebsiteUrl: "",
   contact: {
     email: "iamsimranjot@gmail.com",

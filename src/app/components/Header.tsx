@@ -1,8 +1,7 @@
 "use client";
 
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon, MailIcon, PhoneIcon, DownloadIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { RESUME_DATA } from "@/data/resume-data";
 import toast from "react-hot-toast";
 
@@ -69,6 +68,41 @@ function SocialButton({ href, icon: Icon, label }: SocialButtonProps) {
       >
         <Icon className="size-4" aria-hidden="true" />
       </a>
+    </Button>
+  );
+}
+
+interface DownloadButtonProps {
+  icon: React.ElementType;
+  label?: string;
+  className?: string;
+}
+
+function DownloadButton({
+  icon: Icon,
+  label = "Download PDF",
+  className,
+}: DownloadButtonProps) {
+  const handlePrint = () => {
+    toast.success("Opening PDF print dialog...", {
+      iconTheme: {
+        primary: "gray",
+        secondary: "#FFFAEE",
+      },
+    });
+
+    window.print();
+  };
+
+  return (
+    <Button
+      className={`size-8 ${className}`}
+      variant="outline"
+      size="icon"
+      onClick={handlePrint}
+      aria-label={label}
+    >
+      <Icon className="size-4" aria-hidden="true" />
     </Button>
   );
 }
@@ -210,13 +244,11 @@ export function Header() {
         />
       </div>
 
-      {/* <Avatar className="size-28" aria-hidden="true">
-        <AvatarImage
-          alt={`${RESUME_DATA.name}'s profile picture`}
-          src={RESUME_DATA.avatarUrl}
-        />
-        <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
-      </Avatar> */}
+      <DownloadButton
+        icon={DownloadIcon}
+        label="Download PDF"
+        className="print:hidden"
+      />
     </header>
   );
 }

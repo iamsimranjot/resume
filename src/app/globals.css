@@ -75,6 +75,16 @@
   }
 }
 
-.print-force-new-page {
-  page-break-before: always;
+@media print {
+  .print-badge-colored {
+    background-color: bg-primary/80 !important; /* fallback for Tailwind bg-primary/80 */
+    color: text-primary-foreground !important;
+    border: border-transparent !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page,
+  .page-break {
+    break-after: page;
+  }
 }

@@ -7,7 +7,6 @@ import { Education } from "./components/Education";
 import { Summary } from "./components/Summary";
 import { Skills } from "./components/Skills";
 import { Header } from "./components/Header";
-import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} - Resume`,
@@ -48,7 +47,6 @@ export default function ResumePage() {
       className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-11 md:p-16"
       id="main-content"
     >
-      <Toaster position="top-center" />
       <div className="sr-only">
         <h1>{RESUME_DATA.name}&apos;s Resume</h1>
       </div>

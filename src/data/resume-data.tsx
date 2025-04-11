@@ -7,7 +7,7 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Bengaluru",
   about: "Driving growth, monetization, and product strategy.",
   summary:
-    "Product & engineering leader with 8+ years of experience building and scaling impactful products. I bring strong ownership, a user-first mindset, and a passion for driving growth and meaningful outcomes through tech. Recently led initiatives that boosted MRR by 19% at a YC-backed startup.",
+    "Product & engineering leader with 8+ years of experience building and scaling impactful products. I bring strong ownership, a user-first mindset, and a passion for driving growth & meaningful outcomes through tech. Recently led initiatives that boosted MRR by 19% at a YC-backed startup.",
   avatarUrl: "https://avatars.githubusercontent.com/u/14364505?v=4",
   personalWebsiteUrl: "",
   contact: {
@@ -201,22 +201,15 @@ export const RESUME_DATA = {
         href: "https://www.producthunt.com/products/canonic",
       },
     },
-    // {
-    //   title: "Case Study",
-    //   description: "Product Hunt Launches",
-    //   link: {
-    //     label: "Product Hunt",
-    //     href: "https://www.producthunt.com/products/canonic",
-    //   },
-    // },
   ],
   skills: [
-    "Product Strategy",
     "Product Management",
+    "Product Strategy",
+    "Growth Strategy",
+    "Product Roadmapping",
+    "Stakeholder Management",
     "User Research",
     "Market Research",
-    "Stakeholder Management",
-    "Growth Strategy",
     "Data Analysis",
     "Technical Writing",
     "Developer Tools",

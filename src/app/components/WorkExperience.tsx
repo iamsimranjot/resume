@@ -140,7 +140,7 @@ export function WorkExperience({ work }: WorkExperienceProps) {
         Work Experience
       </h2>
       <div
-        className="space-y-4 print:space-y-0"
+        className="space-y-4 print:space-y-2"
         role="feed"
         aria-labelledby="work-experience"
       >

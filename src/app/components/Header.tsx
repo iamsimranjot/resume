@@ -84,13 +84,6 @@ function DownloadButton({
   className,
 }: DownloadButtonProps) {
   const handlePrint = () => {
-    toast.success("Opening PDF print dialog...", {
-      iconTheme: {
-        primary: "gray",
-        secondary: "#FFFAEE",
-      },
-    });
-
     window.print();
   };
 
@@ -148,6 +141,11 @@ function ContactButtons({ contact, personalWebsiteUrl }: ContactButtonsProps) {
           label={social.name}
         />
       ))}
+      <DownloadButton
+        icon={DownloadIcon}
+        label="Download PDF"
+        className="print:hidden"
+      />
     </div>
   );
 }
@@ -243,12 +241,6 @@ export function Header() {
           personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
         />
       </div>
-
-      <DownloadButton
-        icon={DownloadIcon}
-        label="Download PDF"
-        className="print:hidden"
-      />
     </header>
   );
 }

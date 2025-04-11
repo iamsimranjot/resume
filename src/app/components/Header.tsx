@@ -1,7 +1,9 @@
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+"use client";
+
+import { GlobeIcon, MailIcon, PhoneIcon, DownloadIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { RESUME_DATA } from "@/data/resume-data";
+import toast from "react-hot-toast";
 
 interface LocationLinkProps {
   location: typeof RESUME_DATA.location;
@@ -10,7 +12,7 @@ interface LocationLinkProps {
 
 function LocationLink({ location, locationLink }: LocationLinkProps) {
   return (
-    <p className="max-w-md items-center text-pretty font-mono text-xs text-foreground">
+    <p className="font-poppins max-w-md items-center text-pretty text-xs text-foreground">
       <a
         className="inline-flex gap-x-1.5 align-baseline leading-none hover:underline"
         href={locationLink}
@@ -32,7 +34,31 @@ interface SocialButtonProps {
 }
 
 function SocialButton({ href, icon: Icon, label }: SocialButtonProps) {
-  return (
+  const isCopy =
+    label.toLowerCase() === "email" || label.toLowerCase() === "phone";
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(href).then(() => {
+      toast.success(`${label} copied!`, {
+        iconTheme: {
+          primary: "gray",
+          secondary: "#FFFAEE",
+        },
+      });
+    });
+  };
+
+  return isCopy ? (
+    <Button
+      className="size-8"
+      variant="outline"
+      size="icon"
+      onClick={handleCopy}
+      aria-label={`Copy ${label}`}
+    >
+      <Icon className="size-4" aria-hidden="true" />
+    </Button>
+  ) : (
     <Button className="size-8" variant="outline" size="icon" asChild>
       <a
         href={href}
@@ -46,6 +72,34 @@ function SocialButton({ href, icon: Icon, label }: SocialButtonProps) {
   );
 }
 
+interface DownloadButtonProps {
+  icon: React.ElementType;
+  label?: string;
+  className?: string;
+}
+
+function DownloadButton({
+  icon: Icon,
+  label = "Download PDF",
+  className,
+}: DownloadButtonProps) {
+  const handlePrint = () => {
+    window.print();
+  };
+
+  return (
+    <Button
+      className={`size-8 ${className}`}
+      variant="outline"
+      size="icon"
+      onClick={handlePrint}
+      aria-label={label}
+    >
+      <Icon className="size-4" aria-hidden="true" />
+    </Button>
+  );
+}
+
 interface ContactButtonsProps {
   contact: typeof RESUME_DATA.contact;
   personalWebsiteUrl?: string;
@@ -54,7 +108,7 @@ interface ContactButtonsProps {
 function ContactButtons({ contact, personalWebsiteUrl }: ContactButtonsProps) {
   return (
     <div
-      className="flex gap-x-1 pt-1 font-mono text-sm text-foreground/80 print:hidden"
+      className="font-poppins flex gap-x-1 pt-1 text-sm text-foreground/80 print:hidden"
       role="list"
       aria-label="Contact links"
     >
@@ -67,14 +121,14 @@ function ContactButtons({ contact, personalWebsiteUrl }: ContactButtonsProps) {
       )}
       {contact.email && (
         <SocialButton
-          href={`mailto:${contact.email}`}
+          href={contact.email} // Not mailto
           icon={MailIcon}
           label="Email"
         />
       )}
       {contact.tel && (
         <SocialButton
-          href={`tel:${contact.tel}`}
+          href={contact.tel} // Not tel:
           icon={PhoneIcon}
           label="Phone"
         />
@@ -87,6 +141,11 @@ function ContactButtons({ contact, personalWebsiteUrl }: ContactButtonsProps) {
           label={social.name}
         />
       ))}
+      <DownloadButton
+        icon={DownloadIcon}
+        label="Download PDF"
+        className="print:hidden"
+      />
     </div>
   );
 }
@@ -99,7 +158,7 @@ interface PrintContactProps {
 function PrintContact({ contact, personalWebsiteUrl }: PrintContactProps) {
   return (
     <div
-      className="hidden gap-x-2 font-mono text-sm text-foreground/80 print:flex print:text-[12px]"
+      className="font-poppins hidden gap-x-2 text-sm text-foreground/80 print:flex print:text-[12px]"
       aria-label="Print contact information"
     >
       {personalWebsiteUrl && (
@@ -126,13 +185,13 @@ function PrintContact({ contact, personalWebsiteUrl }: PrintContactProps) {
       )}
       {contact.tel && (
         <>
-        <a
-          className="underline hover:text-foreground/70"
-          href={`tel:${contact.tel}`}
-        >
-          {contact.tel}
-        </a>
-        <span aria-hidden="true">/</span>
+          <a
+            className="underline hover:text-foreground/70"
+            href={`tel:${contact.tel}`}
+          >
+            {contact.tel}
+          </a>
+          <span aria-hidden="true">/</span>
         </>
       )}
       {contact.social[1] && (
@@ -140,7 +199,10 @@ function PrintContact({ contact, personalWebsiteUrl }: PrintContactProps) {
           className="underline hover:text-foreground/70"
           href={`${contact.social[1].url}`}
         >
-          {`${contact.social[1].url.replace("https://", "").replace("www.", "").replace("in/", "")}`}
+          {`${contact.social[1].url
+            .replace("https://", "")
+            .replace("www.", "")
+            .replace("in/", "")}`}
         </a>
       )}
     </div>
@@ -158,7 +220,7 @@ export function Header() {
           {RESUME_DATA.name}
         </h1>
         <p
-          className="max-w-md text-pretty font-mono text-sm text-foreground/80 print:text-[12px]"
+          className="font-poppins max-w-md text-pretty text-base text-foreground/80 print:text-[12px]"
           aria-labelledby="resume-name"
         >
           {RESUME_DATA.about}
@@ -179,14 +241,6 @@ export function Header() {
           personalWebsiteUrl={RESUME_DATA.personalWebsiteUrl}
         />
       </div>
-
-      {/* <Avatar className="size-28" aria-hidden="true">
-        <AvatarImage
-          alt={`${RESUME_DATA.name}'s profile picture`}
-          src={RESUME_DATA.avatarUrl}
-        />
-        <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
-      </Avatar> */}
     </header>
   );
 }

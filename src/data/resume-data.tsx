@@ -5,9 +5,9 @@ export const RESUME_DATA = {
   initials: "",
   location: "Bengaluru, India",
   locationLink: "https://www.google.com/maps/place/Bengaluru",
-  about: "Driving growth, monetization, and product strategy.",
+  about: "I shape complex systems into tools people actually use.",
   summary:
-    "Product & engineering leader with 8+ years of experience building and scaling impactful products. I bring strong ownership, a user-first mindset, and a passion for driving growth & meaningful outcomes through tech. Recently led initiatives that boosted MRR by 19% at a YC-backed startup.",
+    "Product leader with 9+ years of experience building and scaling B2B SaaS and platform products. My work spans across omnichannel support systems, developer platforms, applied AI, mobile apps, and workflow automations. Known for building on complex systems, aligning teams around shared context, and delivering products that drive adoption, revenue, and scale.",
   avatarUrl: "https://avatars.githubusercontent.com/u/14364505?v=4",
   personalWebsiteUrl: "",
   contact: {
@@ -44,54 +44,41 @@ export const RESUME_DATA = {
       company: "BusinessOnBot (YC W21)",
       link: "https://www.businessonbot.com/",
       badges: [],
-      title: "Senior Product Manager",
-      start: "2024",
+      title: "Senior Product Manager - Platform & Growth",
+      start: "05/2024",
       end: "Present",
       description: (
         <>
           <div className="mt-3"></div>
-          <b>Role</b>
           <li className="mb-1 ml-1">
-            Leading the Support vertical, overseeing product direction and
-            execution across customer-facing support tools and experiences.
+            Led the shift from a WhatsApp only product to a full omnichannel
+            support platform integrating WhatsApp, Instagram, Email, Facebook,
+            and Voice or IVR for thousands of D2C brands and enterprises.
+          </li>
+          <li className="mb-1 ml-1">
+            Built a new B2B product vertical from scratch, working closely with
+            customers to define the right ICPs, core use cases, pricing, and GTM
+            strategy to create a new growth lever.
+          </li>
+          <li className="mb-1 ml-1">
+            Delivered a suite of AI-powered features, including intelligent AI
+            agents and contextual assistance, to provide proactive support
+            helping enterprises and improving agent efficiency at scale.
+          </li>
+          <li className="mb-1 ml-1">
+            Owned the end-to-end launch of the mobile app, deciding what
+            mattered for the MVP, adapting key web workflows for mobile, and
+            driving adoption among existing customers.
           </li>
           <li className="ml-1">
-            Managing a team of 3 Product Managers and 2 Designers, and
-            responsible for hiring across Product and Design functions.
-          </li>
-          <div className="mt-3"></div>
-          <b>Key Responsibilities</b>
-          <li className="mb-1 ml-1">
-            Drove the transition of the support product from a WhatsApp-first
-            solution to a complete omnichannel support suite (WhatsApp,
-            Instagram, Email).
-          </li>
-          <li className="mb-1 ml-1">
-            Set up product management practices, roadmapping rituals, and
-            delivery processes for the support team.
-          </li>
-          <li className="mb-1 ml-1">
-            Collaborated closely with Engineering, Customer Success, and Growth
-            teams to ensure alignment between product initiatives and business
-            goals.
+            Put core product practices in place for the team, including
+            roadmapping, prioritization, and delivery rhythms to improve focus
+            and execution.
           </li>
           <li className="ml-1">
-            Launched the Knowledge Base in partnership with the Customer Success
-            team to enable client self-service.
-          </li>
-          <div className="mt-3"></div>
-          <b>Impact</b>
-          <li className="mb-1 ml-1">
-            Increased the average monthly transaction size (ATS) of the client
-            portfolio by ₹2000, contributing to a ~19% uplift in MRR.
-          </li>
-          <li className="mb-1 ml-1">
-            Improved operational efficiency by reducing support dependency by
-            31% through the Knowledge Base.
-          </li>
-          <li className="ml-1">
-            Scaled and strengthened the Product and Design teams by hiring top
-            talent and formalizing team processes.
+            Achieved a 19% MRR uplift through initiatives focused on delivering
+            customer value, increasing adoption, and creating new expansion
+            opportunities.
           </li>
         </>
       ),
@@ -100,36 +87,38 @@ export const RESUME_DATA = {
       company: "Canonic",
       link: "https://www.producthunt.com/products/canonic",
       badges: [],
-      title: "Head of Product | Co-Founder",
-      start: "2020",
-      end: "2024",
+      title: "Co-Founder & Head of Product",
+      start: "06/2020",
+      end: "05/2024",
       description: (
         <>
           <div className="mt-3"></div>
           <li className="mb-1 ml-1">
-            Led product development and strategy at Canonic, empowering users to
-            create full-stack applications without code, and securing a seed
-            round from top-tier investors.
+            Led product strategy from concept to scale for the entire no code
+            platform (VC Funded), from problem discovery to product delivery.
+            Used by over 8K+ users who have deployed 10,000+ applications.
           </li>
           <li className="mb-1 ml-1">
-            Orchestrated user interviews and surveys, authored detailed Product
-            Requirement Documents (PRDs), directed ongoing product enhancements,
-            and led product road-mapping as a product owner.
+            Spent significant time with users to understand real problems, ran
+            interviews, and translated those insights into clear PRDs, system
+            flows, and close working sessions with engineers on architecture,
+            APIs, and key platform trade-offs.
           </li>
           <li className="mb-1 ml-1">
-            Implemented robust analytical frameworks, including comprehensive
-            dashboards and alert systems, to monitor performance metrics and
-            drive data-driven decisions.
+            Owned product decisions for core platform capabilities, such as app
+            building and deployment workflows, third-party integrations, and
+            scaling the system reliably as usage and complexity grew.
           </li>
           <li className="mb-1 ml-1">
-            Engineered successful product launches on platforms such as Product
-            Hunt, securing top rankings and increasing our visibility within the
-            developer community.
+            Set up product analytics and monitoring from the ground up, defining
+            the right metrics, dashboards, and alerts to understand adoption,
+            performance, overall platform health and a culture of continuous
+            learning.
           </li>
           <li className="ml-1">
-            Established cross-functional teams across engineering, design, and
-            marketing for cohesive collaboration, growing the team from 4 to 14
-            members.
+            Successfully executed multiple high-impact product launches,
+            demonstrating initiative and the ability to drive GTM coordination
+            and deliver tangible results in a fast-paced startup environment.
           </li>
         </>
       ),
@@ -139,23 +128,36 @@ export const RESUME_DATA = {
       link: "https://www.haptik.ai/",
       badges: [],
       title: "Software Engineer (iOS)",
-      start: "2017",
-      end: "2020",
+      start: "02/2017",
+      end: "06/2020",
       description: (
         <>
           <div className="mt-3"></div>
           <li className="mb-1 ml-1">
-            Headed the development and management of the iOS SDK from inception,
-            designed to manage millions of conversations daily, enabling
-            AI-powered chatbots within iOS applications.
+            Built Haptik’s iOS AI SDK from scratch and owned it end to end,
+            designing it to handle millions of conversations a day and power
+            AI-driven chat experiences inside native iOS apps.
           </li>
           <li className="mb-1 ml-1">
-            Facilitated the company's strategic transition from a B2C to a B2B
-            business model, culminating in a $100M acquisition by Jio.
+            Took on a full rewrite of the SDK from Objective-C to Swift,
+            improving performance, reducing technical debt, and simplifying
+            developer adoption.
           </li>
           <li className="ml-1">
-            Integrated the SDK with notable brands including FuturePay, Times,
-            Jio, and others, expanding its reach and impact.
+            Designed a modular (AI chatbot, agent chat, payments, etc.), and
+            scalable architecture, enabling enterprise clients to seamlessly
+            embed AI capabilities into their existing workflows and
+            environments.
+          </li>
+          <li className="ml-1">
+            Automated build and release pipelines using Fastlane, reducing
+            manual overhead and making releases more reliable.
+          </li>
+          <li className="ml-1">
+            Teamed closely with enterprise partners such as Jio, Times Group,
+            and Future Pay to integrate the SDK into high scale apps, supporting
+            Haptik’s transition from B2C to B2B and contributing to its 100M
+            dollar acquisition by Jio.
           </li>
         </>
       ),
@@ -165,8 +167,8 @@ export const RESUME_DATA = {
       link: "https://www.novoinvent.com/",
       badges: [],
       title: "Software Engineering Intern (iOS)",
-      start: "2016",
-      end: "2017",
+      start: "05/2016",
+      end: "01/2017",
       description: (
         <>
           <div className="mt-3"></div>
@@ -205,15 +207,27 @@ export const RESUME_DATA = {
   skills: [
     "Product Management",
     "Product Strategy",
-    "Growth Strategy",
     "Product Roadmapping",
-    "Stakeholder Management",
+    "Product Requirements",
+    "PRDs",
+    "Product Analytics",
+    "Pricing & Monetization",
     "User Research",
-    "Market Research",
+    "Customer Discovery",
+    "Stakeholder Management",
+    "Cross-functional Collaboration",
+    "Workflow Design",
+    "Agile Methodologies",
+    "Problem Solving",
+    "Applied AI Products",
+    "AI Agents",
+    "LLMs",
+    "Developer Platforms",
     "Data Analysis",
-    "Technical Writing",
-    "Developer Tools",
+    "Microservices",
     "API Design",
-    "Scrum",
+    "System Architecture",
+    "SDKs",
+    "Mobile Applications",
   ],
 } as const;

@@ -52,12 +52,12 @@ export default function ResumePage() {
       </div>
 
       <section
-        className="mx-auto w-full max-w-3xl space-y-8 bg-white print:space-y-4"
+        className="mx-auto w-full max-w-3xl space-y-8 bg-white print:space-y-10"
         aria-label="Resume Content"
       >
         <Header />
 
-        <div className="space-y-8 print:space-y-4">
+        <div className="space-y-8 print:space-y-6">
           <Summary summary={RESUME_DATA.summary} />
 
           <WorkExperience work={RESUME_DATA.work} />
